@@ -55,7 +55,6 @@ O sistema deve apresentar um menu interativo com as seguintes opções:
 - Utilizar if/else para validações
 - Incluir mensagens claras para o usuário
 - Validar todas as entradas de dados
-- Implementar pelo menos uma estrutura de dados (array ou ArrayList)
 
 ## 🌟 Desafio Bônus
 Implementar uma ou mais funcionalidades extras:
@@ -88,8 +87,6 @@ Implementar uma ou mais funcionalidades extras:
 3. Desenvolva o sistema
 4. Faça commits frequentes
 5. Ao finalizar, faça um pull request
-
-## 📅 Prazo de Entrega
 [DEFINIR DATA]
 
 ## 📬 Dúvidas
