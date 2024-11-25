@@ -75,22 +75,5 @@ Implementar uma ou mais funcionalidades extras:
 - Total de multas acumuladas
 - Estatísticas por categoria
 
-## 📋 Critérios de Avaliação
-- Funcionamento correto das operações (35%)
-- Validação adequada dos dados (25%)
-- Clareza e organização do código (20%)
-- Implementação de funcionalidades bônus (20%)
-
-## 🚀 Como Começar
-1. Clone este repositório
-2. Crie uma branch com seu nome
-3. Desenvolva o sistema
-4. Faça commits frequentes
-5. Ao finalizar, faça um pull request
-[DEFINIR DATA]
-
-## 📬 Dúvidas
-Caso tenha dúvidas, abra uma issue no repositório.
-
 ---
 Boa sorte! 🍀
