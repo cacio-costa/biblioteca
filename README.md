@@ -1,18 +1,9 @@
 # Desafio - Sistema de Gerenciamento de Biblioteca 📚
 
 ## 🎯 Objetivo
-Desenvolver um sistema de gerenciamento de biblioteca em Java, aplicando conceitos fundamentais de programação.
+Desenvolver um sistema de gerenciamento de biblioteca em Java, aplicando **Orientação a Objetos**.
 
 ## 📝 Requisitos Básicos
-
-### Variáveis Iniciais
-O sistema deve iniciar com as seguintes informações:
-```java
-String bibliotecario = "Nome do Bibliotecário";
-int livrosDisponiveis = 150;
-int livrosEmprestados = 0;
-double multaPorDia = 2.50;
-```
 
 ### Menu Principal
 O sistema deve apresentar um menu interativo com as seguintes opções:
@@ -26,54 +17,78 @@ O sistema deve apresentar um menu interativo com as seguintes opções:
 
 ## 🛠️ Funcionalidades Obrigatórias
 
+## 📋 Modelo da Classe Livro
+- String codigo
+- String titulo
+- String autor
+- double preco
+- double valorMulta
+- int quantidadeExemplares
+
+## 📚 Acervo Inicial
+Para iniciar o projeto, crie um acervo com 3 livros que você gosta. Exemplo:
+
+1. Harry Potter e a Pedra Filosofal
+    - Código: "HP001"
+    - Autor: "J.K. Rowling"
+    - Preço: R$ 45.90
+    - Valor Multa: R$ 2.00
+    - Quantidade: 3 exemplares
+
+2. Percy Jackson e o Ladrão de Raios
+    - Código: "PJ001"
+    - Autor: "Rick Riordan"
+    - Preço: R$ 39.90
+    - Valor Multa: R$ 2.00
+    - Quantidade: 2 exemplares
+
+3. O Hobbit
+    - Código: "HB001"
+    - Autor: "J.R.R. Tolkien"
+    - Preço: R$ 55.90
+    - Valor Multa: R$ 2.00
+    - Quantidade: 2 exemplares
+
+## 🛠️ Funcionalidades Obrigatórias
+
 ### 1. Consultar Acervo
-- Exibir quantidade atual de livros disponíveis
-- Exibir quantidade de livros emprestados
+- Exibir todos os livros cadastrados com:
+    - Código e título do livro
+    - Nome do autor
+    - Preço do livro
+    - Quantidade de exemplares disponíveis
+- Mostrar total de livros no acervo
 - Apresentar informações de forma organizada
 
 ### 2. Emprestar Livro
-- Diminuir quantidade de livros disponíveis
-- Aumentar contador de livros emprestados
-- Validar se existem livros disponíveis para empréstimo
-- Exibir mensagem de sucesso ou erro
+- Solicitar código do livro
+- Verificar se o livro existe no acervo
+- Verificar se há exemplares disponíveis
+- Diminuir quantidade de exemplares
+- Exibir mensagem com dados do empréstimo
 
 ### 3. Devolver Livro
-- Aumentar quantidade de livros disponíveis
-- Diminuir contador de livros emprestados
-- Validar se existem livros para serem devolvidos
-- Exibir mensagem de sucesso ou erro
+- Solicitar código do livro
+- Verificar se o livro existe no acervo
+- Aumentar quantidade de exemplares
+- Validar quantidade máxima de exemplares
+- Exibir mensagem de confirmação
 
 ### 4. Calcular Multa
+- Solicitar código do livro
+- Verificar valor da multa do livro
 - Receber quantidade de dias de atraso
-- Calcular valor da multa (dias × multaPorDia)
-- Exibir valor total da multa
-- Validar entrada de dados
+- Calcular valor total (valorMulta × dias)
+- Exibir detalhes do cálculo
 
-## 💻 Requisitos Técnicos
-- Utilizar Scanner para entrada de dados
-- Implementar loop com while para o menu
-- Utilizar if/else para validações
-- Incluir mensagens claras para o usuário
-- Validar todas as entradas de dados
-
-## 🌟 Desafio Bônus
-Implementar uma ou mais funcionalidades extras:
-
-### Sistema de Cadastro de Livros
-- Título
-- Autor
-- Ano de publicação
-- Categoria
-
-### Sistema de Busca
-- Busca por título
-- Busca por categoria
-- Busca por autor
-
-### Sistema de Relatórios
-- Ranking de livros mais emprestados
-- Total de multas acumuladas
-- Estatísticas por categoria
+## 🌟 Desafio Extra
+Crie uma classe Biblioteca que:
+- Possua um array de 5 posições para armazenar livros
+- Inicialize com os 3 livros do acervo inicial
+- Implemente um método para cadastrar até 2 novos livros
+- Valide se ainda há espaço no array
+- Não permita cadastrar livros com mesmo código
+- Exiba mensagem de sucesso ou erro no cadastro
 
 ---
 Boa sorte! 🍀
