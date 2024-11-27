@@ -87,6 +87,7 @@ Crie uma classe Biblioteca que:
 - Inicialize com os 3 livros do acervo inicial
 - Implemente um método para cadastrar até 2 novos livros
 - Valide se ainda há espaço no array
+    - Se não tiver espaço, altere o tamanho do array, sem perder os dados
 - Não permita cadastrar livros com mesmo código
 - Exiba mensagem de sucesso ou erro no cadastro
 
