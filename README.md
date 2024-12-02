@@ -90,6 +90,69 @@ Crie uma classe Biblioteca que:
     - Se não tiver espaço, altere o tamanho do array, sem perder os dados
 - Não permita cadastrar livros com mesmo código
 - Exiba mensagem de sucesso ou erro no cadastro
+---
+
+# 📚 Sistema de Biblioteca v2.0
+
+## 🎯 Desafio de Implementação
+Evoluir o sistema de biblioteca atual aplicando conceitos de orientação a objetos e estruturas de dados.
+
+## 📋 Novas Classes
+
+### Classe Emprestimo
+Criar classe para registrar empréstimos com os atributos:
+- Livro livro
+- LocalDateTime dataEmprestimo
+- boolean devolvido
+
+### Classe Biblioteca
+Criar classe para gerenciar o sistema com:
+- HashMap<String, Livro> acervo
+- List<Emprestimo> emprestimos
+
+## 🛠️ Funcionalidades a Implementar
+
+### 1. Gestão de Livros com HashMap
+- Converter o acervo atual para usar HashMap<String, Livro>
+- Usar o código do livro como chave do Map
+- Implementar métodos para:
+    - Adicionar livro
+    - Buscar livro por código
+    - Remover livro
+    - Listar todo o acervo
+
+### 2. Sistema de Empréstimos
+- Criar registro de empréstimo com data atual
+- Armazenar empréstimos em uma lista
+- Implementar métodos para:
+    - Registrar novo empréstimo
+    - Marcar empréstimo como devolvido
+    - Listar empréstimos ativos
+    - Buscar empréstimo por livro
+
+### 3. Relatórios
+Adicionar novos comandos no menu:
+- "6 - Listar empréstimos ativos"
+- "7 - Histórico de empréstimos"
+
+### 4. Validações
+- Impedir empréstimo de livro sem exemplares disponíveis
+- Validar existência do livro no acervo
+- Verificar se livro já está emprestado
+- Confirmar devolução apenas de livros emprestados
+
+## ⭐️ SUPER DESAFIO: Padrão Command
+
+Implementar o padrão Command para as operações do menu:
+
+2. Implementar um comando para cada operação:
+- ConsultarAcervoCommand
+- EmprestarLivroCommand
+- DevolverLivroCommand
+- CalcularMultaCommand
+- ListarEmprestimosCommand
+
+Consulte o material de referência: [Command Pattern](https://refactoring.guru/pt-br/design-patterns/command)
 
 ---
 Boa sorte! 🍀
