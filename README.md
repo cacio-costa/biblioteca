@@ -153,6 +153,34 @@ Implementar o padrão Command para as operações do menu:
 - ListarEmprestimosCommand
 
 Consulte o material de referência: [Command Pattern](https://refactoring.guru/pt-br/design-patterns/command)
+---
+
+# 📚 Sistema de Biblioteca v3.0
+
+## 🎯 Desafio de Implementação
+Introduzir JDBC no projeto para salvar e recuperar informações no banco de dados Oracle.
+
+### 1. Criar ConnectionFactory
+Criar classe para abstrair a criação de conexões com banco de dados:
+
+### 2. Implementar CRUD de Livro com LivroDao
+- Criar classe `LivroDao` e implementar os seguintes métodos:
+    - `insere(Livro novoLivro)`
+    - `atualiza(Livro livro)`
+    - `exclui(Livro livro)`
+    - `listaTodos()`
+    - `pesquisaPorCodigo(String id)` 
+
+### 3. Adaptar sistema para usar o `LivroDao`
+- Altere a classe que contém o `main` para usar o `LivroDao` nas opções:
+  1. Consultar acervo 
+  1. Emprestar livro 
+  1. Devolver livro 
+  1. Calcular multa
+     
+## ⭐️ SUPER DESAFIO: 
+
+Implementar persistência de empréstimos usando as classes `Emprestimo` e `EmprestimoDao`
 
 ---
 Boa sorte! 🍀
