@@ -1,3 +1,5 @@
+package modelo;
+
 public class Livro {
 
     private String codigo;
@@ -80,7 +82,7 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Livro{" +
+        return "livro.Livro{" +
                 "codigo='" + codigo + '\'' +
                 ", titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
